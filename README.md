@@ -1,27 +1,22 @@
 # AngularCypress
 
+This little project shows how to setup cypress within Angular environment.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
 
-## Development server
+## Reproduce steps
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Generate project with [Angular CLI](https://github.com/angular/angular-cli) (This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.)
+* Install [Cypress](https://www.cypress.io/): `ng add @briebug/cypress-schematic --add-cypress-test-scripts`
+* Install [concurrently](https://www.npmjs.com/package/concurrently) and [start-server-and-test](https://www.npmjs.com/package/start-server-and-test): `npm install --save-dev concurrently start-server-and-test`
+* Setup your `e2e` and `e2e:ci` scripts in your `package.json`
+* Write your first tests!
 
-## Code scaffolding
+## Some commands
+* Run `npm run e2e` to execute the end-to-end tests via the Cypress GUI.
+* Run `npm run e2e:ci` to execute the end-to-end tests via Cypress in terminal only.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Further links:
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* [How to get started with Cypress](https://indepth.dev/posts/1226/how-to-get-started-with-cypress)
+* [Introduction to Cypress with Angular](https://fullyunderstood.com/introduction-to-cypress-with-angular)
